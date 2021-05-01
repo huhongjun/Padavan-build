@@ -66,7 +66,7 @@ jobs:
         
         # huhongjun start
         sed -i '/CONFIG_FIRMWARE_INCLUDE_LPRD/d' .config #删除配置项LPR printer daemon. ~0.12MB
-        sed -i '/CONFIG_FIRMWARE_INCLUDE_U2EC/d'
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_U2EC/d' .config
         # huhongjun end
         
         ######################################################################
