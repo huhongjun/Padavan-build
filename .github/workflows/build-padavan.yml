@@ -41,6 +41,9 @@ jobs:
         TNAME: MI-3
       run: |
         cd /opt/rt-n56u/trunk
+        
+        sed -i 's/FIRMWARE_BUILDS_REV=20201015/FIRMWARE_BUILDS_REV=20210501/g' versions.inc
+        
         if [ ! -f configs/templates/$TNAME.config ] ; then
         echo "configs/templates/$TNAME.config not found "
         exit 1
